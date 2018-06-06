@@ -17,12 +17,12 @@ import ForgotPasswordComponent from "../components/ForgotPassword";
 import AboutComponent from "../components/About";
 
 const Index = (
-  <Stack>
-    <Scene key="login" component={LoginContainer} Layout={LoginComponent}/> 
-    <Scene key="signup" component={SignUpContainer} Layout={SignUpComponent}/> 
-    <Scene key="signup" component={ForgotPasswordContainer} Layout={ForgotPasswordComponent}/>
-    <Scene key="about" component={ForgotPasswordContainer} Layout={ForgotPasswordComponent}/> 
-  </Stack>
+	<React.Fragment>
+		<Scene hideNavBar key="login" component={LoginContainer} Layout={LoginComponent}/> 
+		<Scene back key="signup" title="Sign Up" component={SignUpContainer} Layout={SignUpComponent} {...DefaultProps.navbarProps}/> 
+		<Scene key="signup" component={ForgotPasswordContainer} Layout={ForgotPasswordComponent}/>
+		<Scene key="about" component={ForgotPasswordContainer} Layout={ForgotPasswordComponent}/>
+	</React.Fragment> 
 );
 
 export default Index;

@@ -112,14 +112,14 @@ export default {
   cardDefaultBg: '#fff',
 
   // Color
-  brandPrimary: '#473BE7',
+  brandPrimary: '#F9A084',
   brandInfo: '#62B1F6',
   brandSuccess: '#5cb85c',
   brandDanger: '#d9534f',
   brandWarning: '#f0ad4e',
   brandSidebar: '#252932',
-  brandDark: '#000',
-  brandLight: '#f4f4f4',
+  brandDark: '#202020',
+  brandLight: '#F9A084',
 
   // Font
   fontFamily: platform === 'ios' ? 'System' : 'Roboto',
@@ -158,7 +158,7 @@ export default {
 
   // Header
   toolbarBtnColor: '#fff',
-  toolbarDefaultBg: '#2874F0',
+  toolbarDefaultBg: '#F9A084',
   toolbarHeight: platform === 'ios' ? (isIphoneX ? 88 : 64) : 56,
   toolbarIconSize: platform === 'ios' ? 20 : 22,
   toolbarSearchIconSize: platform === 'ios' ? 20 : 23,
